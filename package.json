@@ -1,0 +1,25 @@
+{
+  "name": "@liyongning/lyn-comp-lib",
+  "version": "1.0.0",
+  "description": "从 0 到 1 搭建组件库",
+  "main": "lib/lyn-comp-lib.common.js",
+  "scripts": {
+    "build:commonjs2": "webpack --config webpack.common.js",
+    "build:umd": "webpack --config webpack.umd.js",
+    "build": "npm run build:commonjs2 && npm run build:umd"
+  },
+  "keywords": [
+    "组件库",
+    "0 到 1"
+  ],
+  "author": "Li Yong Ning",
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
